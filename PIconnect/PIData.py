@@ -37,7 +37,7 @@ class PISeries(Series):
 
            TODO: Allow to define timezone, default to UTC?
         """
-        local_tz = pytz.timezone('Europe/Amsterdam')
+        local_tz = pytz.timezone('Canada/Atlantic')
         return datetime.datetime(
             timestamp.Year,
             timestamp.Month,
