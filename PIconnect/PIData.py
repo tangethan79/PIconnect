@@ -32,12 +32,12 @@ class PISeries(Series):
         self.uom = uom
 
     @staticmethod
-    def timestamp_to_index(timestamp):
+    def timestamp_to_index(timestamp, tzone = 'Europe/Amsterdam'):
         """Convert AFTime object to datetime.datetime in local timezone.
 
            TODO: Allow to define timezone, default to UTC?
         """
-        local_tz = pytz.timezone('Europe/Amsterdam')
+        local_tz = pytz.timezone(tzone)
         return datetime.datetime(
             timestamp.Year,
             timestamp.Month,
