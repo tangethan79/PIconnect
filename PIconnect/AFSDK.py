@@ -105,7 +105,7 @@ except ImportError:
 
                 def _init(self):
                     if not self.DefaultPIServer:
-                        self.DefaultPIServer = AF.PI.PIServer('Testing')
+                        self.DefaultPIServer = AF.PI.PIServer('gendb1.nbpower.com')
 
                 def __iter__(self):
                     self._init()
